@@ -1,4 +1,5 @@
 {
+  "homepage": "https://mellishkimo.github.io/charter-rewards",
   "name": "charter-rewards",
   "version": "0.1.0",
   "private": true,
@@ -35,7 +36,6 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^3.1.0",
-    "homepage": "http:mellishkimo.github.io/charter-rewards"
+    "gh-pages": "^3.1.0"
   }
 }
