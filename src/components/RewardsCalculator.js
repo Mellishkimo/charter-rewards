@@ -20,7 +20,7 @@ export const calculateMonthlyRewards = (numberMonth, customerData) => {
                 monthlyTotals[customerName] = { purchases: 0, purchaseTotal: 0, rewards: 0 }
             }
             monthlyTotals[customerName] = {
-                name: customerName,
+                customer: customerName,
                 purchases: monthlyTotals[customerName].purchases + 1,
                 purchaseTotal: monthlyTotals[customerName].purchaseTotal + transaction.purchaseAmount,
                 rewards: monthlyTotals[customerName].rewards + calculateRewards(transaction.purchaseAmount)
@@ -44,7 +44,7 @@ export const calculateTotalRewards = (customerData) => {
                 rewardsTotals[customerName] = { purchases: 0, purchaseTotal: 0, rewards: 0 }
             }
             rewardsTotals[customerName] = {
-                name: customerName,
+                customer: customerName,
                 purchases: rewardsTotals[customerName].purchases + 1,
                 purchaseTotal: rewardsTotals[customerName].purchaseTotal + transaction.purchaseAmount,
                 rewards: rewardsTotals[customerName].rewards + calculateRewards(transaction.purchaseAmount)
