@@ -12,6 +12,10 @@ th {
   text-align: left;
 }
 
+th:hover {
+  cursor: pointer;
+}
+
 .tablesContainer {
   display: grid;
   justify-content: center;
