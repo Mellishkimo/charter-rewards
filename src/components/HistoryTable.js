@@ -1,77 +1,66 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Table } from 'reactstrap'
 import { salesRecords } from '../data/SalesRecords'
 import { calculateRewards } from '../components/RewardsCalculator'
 import { tableSort } from '../utils'
 import SortArrows from './SortArrows'
 
-class HistoryTable extends React.Component {
-    constructor (props) {
-        super(props)
-        this.state = {
-            currentSort: 'dateDown'
-        }
-    }
+const HistoryTable = () => {
+    const [currentSort, setCurrentSort] = useState('dateDown');
 
-    sortDate = () => {
-        const { currentSort } = this.state
+    const sortDate = () => {
         let nextSort
 
         if (currentSort === 'dateDown') nextSort = 'dateUp'
         else nextSort = 'dateDown'
 
-        this.setState({ currentSort: nextSort })
+        setCurrentSort(nextSort);
     }
 
-    sortCustomer = () => {
-        const { currentSort } = this.state
+    const sortCustomer = () => {
         let nextSort
 
         if (currentSort === 'customerDown') nextSort = 'customerUp'
         else nextSort = 'customerDown'
 
-        this.setState({ currentSort: nextSort })
+        setCurrentSort(nextSort);
     }
 
-    sortPurchaseAmount = () => {
-        const { currentSort } = this.state
+    const sortPurchaseAmount = () => {
         let nextSort
 
         if (currentSort === 'purchaseAmountDown') nextSort = 'purchaseAmountUp'
         else nextSort = 'purchaseAmountDown'
 
-        this.setState({ currentSort: nextSort })
+        setCurrentSort(nextSort);
     }
 
-    sortReward = () => {
-        const { currentSort } = this.state
+    const sortReward = () => {
         let nextSort
 
         if (currentSort === 'rewardDown') nextSort = 'rewardUp'
         else nextSort = 'rewardDown'
 
-        this.setState({ currentSort: nextSort })
+        setCurrentSort(nextSort);
     }
 
-    render () {
-        const { currentSort } = this.state
         return (
             <Table>
                 <thead>
                     <tr>
-                        <th onClick={this.sortDate}>
+                        <th onClick={sortDate}>
                             Date
                             <SortArrows column={'date'} currentSort={currentSort} />
                         </th>
-                        <th onClick={this.sortCustomer}>
+                        <th onClick={sortCustomer}>
                             Customer
                             <SortArrows column={'customer'} currentSort={currentSort} />
                         </th>
-                        <th onClick={this.sortPurchaseAmount}>
+                        <th onClick={sortPurchaseAmount}>
                             Purchase Amt
                             <SortArrows column={'purchaseAmount'} currentSort={currentSort} />
                         </th>
-                        <th onClick={this.sortReward}>
+                        <th onClick={sortReward}>
                             Reward
                             <SortArrows column={'reward'} currentSort={currentSort} />
                         </th>
@@ -91,7 +80,6 @@ class HistoryTable extends React.Component {
                 </tbody>
             </Table>
         )
-    }
 }
 
 export default HistoryTable

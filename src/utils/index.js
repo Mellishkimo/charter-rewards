@@ -1,5 +1,14 @@
+import axios from "axios";
+import MockAdapter from "axios-mock-adapter";
 import moment from 'moment'
 import { calculateRewards } from '../components/RewardsCalculator'
+import { salesRecords } from "../data/SalesRecords";
+
+export const mockApi = new MockAdapter(axios, { delayResponse: 2000 });
+
+mockApi.onGet("/transactions").reply(200, {
+    transactions: salesRecords
+});
 
 export const tableSort = {
     customerUp: { fn: (a, b) => {
