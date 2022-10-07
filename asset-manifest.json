@@ -1,22 +1,13 @@
 {
   "files": {
-    "main.css": "/charter-rewards/static/css/main.ca0d004a.chunk.css",
-    "main.js": "/charter-rewards/static/js/main.5d26315a.chunk.js",
-    "main.js.map": "/charter-rewards/static/js/main.5d26315a.chunk.js.map",
-    "runtime-main.js": "/charter-rewards/static/js/runtime-main.22c7442d.js",
-    "runtime-main.js.map": "/charter-rewards/static/js/runtime-main.22c7442d.js.map",
-    "static/js/2.0d04a2e9.chunk.js": "/charter-rewards/static/js/2.0d04a2e9.chunk.js",
-    "static/js/2.0d04a2e9.chunk.js.map": "/charter-rewards/static/js/2.0d04a2e9.chunk.js.map",
+    "main.css": "/charter-rewards/static/css/main.77ecbf12.css",
+    "main.js": "/charter-rewards/static/js/main.f88c1328.js",
     "index.html": "/charter-rewards/index.html",
-    "precache-manifest.c64c55e8b6c3bb814788c7e18facadcb.js": "/charter-rewards/precache-manifest.c64c55e8b6c3bb814788c7e18facadcb.js",
-    "service-worker.js": "/charter-rewards/service-worker.js",
-    "static/css/main.ca0d004a.chunk.css.map": "/charter-rewards/static/css/main.ca0d004a.chunk.css.map",
-    "static/js/2.0d04a2e9.chunk.js.LICENSE.txt": "/charter-rewards/static/js/2.0d04a2e9.chunk.js.LICENSE.txt"
+    "main.77ecbf12.css.map": "/charter-rewards/static/css/main.77ecbf12.css.map",
+    "main.f88c1328.js.map": "/charter-rewards/static/js/main.f88c1328.js.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.22c7442d.js",
-    "static/js/2.0d04a2e9.chunk.js",
-    "static/css/main.ca0d004a.chunk.css",
-    "static/js/main.5d26315a.chunk.js"
+    "static/css/main.77ecbf12.css",
+    "static/js/main.f88c1328.js"
   ]
 }
