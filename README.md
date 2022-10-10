@@ -15,3 +15,5 @@ Simulate an asynchronous API call to fetch data
 Make up a data set to best demonstrate your solution
 
 Check solution into GitHub
+
+(Additionally implemented unit testing to test calculateRewards function. Run npm test in terminal to execute test)
